@@ -9,6 +9,10 @@ public class Hero {
         this.mp = 200;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String toString() {
         // Object クラスの toString() をオーバーライド
         return "勇者 (名前=" + this.name + "/HP=" + this.hp + "/MP=" + this.mp + "）";
