@@ -17,4 +17,11 @@ public class Hero {
         // Object クラスの toString() をオーバーライド
         return "勇者 (名前=" + this.name + "/HP=" + this.hp + "/MP=" + this.mp + "）";
     }
+
+    public int hashCode() {
+        // Object クラスの hashCode() をオーバーライド
+        // 任意の個数の引数を受け取り、引数に基づきハッシュコードとして適切な整数を生成するAPI
+        // hashCode() は 例えば remove() メソッドなどで指定した引数と対象物の参照・比較を行う際に内部で使用されている
+        return Objects.hash(this.name, this.hp);
+    }
 }
