@@ -19,4 +19,7 @@ public class LoginHistroy {
 
 
 // 上記を簡易化する特別なクラス "record"
-public record LoginHistroy(String user, int retry, boolean result) {}
+public record LoginHistroy(String user, int retry, boolean result) {
+    // 追加のコンストラクタ定義
+    this("unknown", 0, false);
+}
