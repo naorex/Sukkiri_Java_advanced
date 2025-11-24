@@ -1,3 +1,4 @@
+
 // 残高順を実装したコンパレータ
 import java.util.Comparator;
 

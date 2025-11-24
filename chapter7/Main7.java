@@ -16,7 +16,7 @@ public class Main7 {
         NodeList children = self.getChildNodes(); // 全ての子を取得
         for (int i = 0; i < children.getLength(); i++) {
             if (children.item(i) instanceof Element) {
-                Element e = (Element)children.item(i);
+                Element e = (Element) children.item(i);
                 if (e.getTagName().equals(name)) { // タグ名を照合
                     return e;
                 }

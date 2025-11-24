@@ -3,6 +3,7 @@
 public class Account2 implements Comparable<Account2> {
     int number;
     int zandaka;
+
     public int compareTo(Account2 obj) {
         // 引数で渡されたインスタンス obj と自身を比較して大小関係を判定する
         if (this.number < obj.number) {

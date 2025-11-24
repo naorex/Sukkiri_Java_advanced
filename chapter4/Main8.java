@@ -5,7 +5,7 @@ public class Main8 {
         Class<?> clazz = RefSample.class;
 
         Constructor<?> cons = clazz.getConstructor(int.class);
-        RefSample rs = (RefSample)cons.newInstance(256);
+        RefSample rs = (RefSample) cons.newInstance(256);
 
         Field f = clazz.getField("times");
         f.set(rs, 2);

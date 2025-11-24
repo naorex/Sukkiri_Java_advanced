@@ -1,5 +1,6 @@
 public class Outer2 {
     int outerMember = 2;
+
     void outerMethod() {
         int a = 10;
         // ローカルクラス

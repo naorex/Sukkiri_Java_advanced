@@ -13,7 +13,8 @@ public class Main4 {
             if (fw != null) {
                 try {
                     fw.close();
-                } catch (IOException e2) {}
+                } catch (IOException e2) {
+                }
             }
         }
     }

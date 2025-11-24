@@ -10,7 +10,7 @@ public class Main10 {
         oos.close();
         FileInputStream fis = new FileInputStream("rpgsave.dat");
         ObjectInputStream ois = new ObjectInputStream(fis);
-        Hero hero2 = (Hero)ois.readObject(); // バイト列からインスタンス
+        Hero hero2 = (Hero) ois.readObject(); // バイト列からインスタンス
         ois.close();
     }
 }

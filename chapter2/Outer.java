@@ -1,5 +1,6 @@
 public class Outer {
-    int outerField; static int outerStaticField;
+    int outerField;
+    static int outerStaticField;
 
     // メンバクラスの宣言
     static class Inner {
