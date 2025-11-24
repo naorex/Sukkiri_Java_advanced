@@ -205,3 +205,28 @@
 - 代表的な WebAPI の設計哲学として、REST がある。
 
 ## Chapter9 DB アクセス
+
+### データベースと SQL
+
+- データベースは検索性能、並列実行、トランザクション制御など、ファイルにはない特長を持つ。
+- リレーショナルデータベース (RDB) は、データを表形式で管理する。
+- RDB は SQLという専用の言語で書かれた命令を使って操作する。
+- SQLを用いて検索 (SELECT)、挿入 (INSERT)、更新 (UPDATE)、削除 (DELETE) の4つの基本的な操作を行うことができる。
+
+### JDBCによるデータベースの操作
+
+- データベースに SQL文を送信するには JDBC という API を利用する。
+- 利用する DBMS のドライバ (JARファイル) にクラスパスを通しておく。
+- DriverManager と Connection でデータベースに接続し、切断する。
+- PreparedStatement を使って SQL文を組み立て、送信する。
+- ResultSet を使ってデータベースから返された結果表のデータを取得する。
+- データベースを利用したプログラムでは、パターンを活用できることが多い。
+
+### データ型
+
+- java.util.Date 型の情報は、TIMESTAMP型の列に格納する。
+- java.sql.Timestamp を使ってパラメータに日時情報を指定する。
+- ResultSetのgetTimestamp() を使って、結果表から日時情報を取り出す。
+- java.util.Dateとjava.sql.Date はまったく別のクラスと捉える。
+
+## Chapter 10 基本的な開発ツール
